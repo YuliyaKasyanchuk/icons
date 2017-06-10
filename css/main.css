@@ -1,0 +1,101 @@
+h1 {
+  font: 700 50px/50px 'Open Sans',sans-serif;
+  color: #fc6744;
+  padding-top: 50px;
+  margin: 0;
+}
+
+h1 span {
+  color: #000;
+}
+
+h2 {
+  font: 700 20px/42px 'Open Sans',sans-serif;
+}
+
+.block,
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+p {
+  clor: #babbc4;
+  font: 400 16px/24px 'Open Sans',sans-serif;
+}
+
+.block {
+  box-shadow: 0 0 35px 0 rgba(20,20,21,.21);
+  width: 262px;
+  height: 263px;
+  margin: 100px auto 50px;
+}
+
+.block p,
+.btn a {
+  font-family: OpenSans;
+}
+
+.block .fa,
+.block p,
+h2 {
+  color: rgba(255,255,255,.8);
+}
+
+.block p {
+  text-align: center;
+  padding: 0 40px;
+  font: 400 15px/22px 'Open Sans',sans-serif;
+}
+
+.block .fa {
+  font-size: 50px;
+  vertical-align: middle;
+  padding-top: 50px;
+}
+
+.tomy {
+  background-color: #4eb2f7;
+}
+
+.set {
+  background-color: #c049f8;
+}
+
+.koire {
+  background-color: #817eff;
+}
+
+.lara {
+  background-color: #f74770;
+}
+
+.lara .fa {
+  transform: rotate(-18.453deg);
+}
+
+.btn {
+  border-radius: 27px;
+  background-color: #fff;
+  box-shadow: 3px 5px 14px 0 rgba(20,20,21,.09);
+  width: 228px;
+  height: 55px;
+  display: block;
+  margin: -75px auto 0;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.btn a {
+  text-decoration: none;
+  font: 400 16px/25px 'Open Sans',sans-serif;
+  color: rgba(0,0,0,.8);
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.btn .fa {
+  width: 16px;
+  height: 16px;
+}
