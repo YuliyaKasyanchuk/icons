@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Animation</title>
+    <title>Modal</title>
 
     <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -20,82 +20,92 @@
     <![endif]-->
   </head>
   <body>
-   <header>
-     <div class="header-top">
-       <div class="container">
-         <div class="row">
-           <div class="col-md-3 wow lightSpeedIn"><p>Видео-ролики для бизнеса в Казани</p></div>
-           <div class="col-md-offset-4 col-md-4">
-              <a href="#" class="phone-number">8 (843) 999-99-99</a>
-              <a href="#" class="btn">Заказать звонок</a>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="header-menu">
-       <div class="row">
-         <div class="col-md-12">
-           <ul>
-             <li>
-               <a class="menu-item" href="#">Главная</a>
-               <a class="menu-item" href="#">О нас</a>
-               <a class="menu-item" href="#">Наши клиенты</a>
-               <a class="menu-item" href="#">Виды роликов</a>
-               <a class="menu-item" href="#">Портфолио</a>
-               <a class="menu-item" href="#">Цены</a>
-               <a class="menu-item" href="#">Контакты</a>
-             </li>
-           </ul>
-         </div>
-       </div>
-     </div>
-   </header>
-   <div class="main-wrapper">
-     <div class="about-block">
-       <div class="container">
-         <div class="row">
-           <div class="col-md-12"></div>
-           <h1 class="company-title wow zoomIn" >Beam Light</h1>
-           <h2 class="wow bounceInLeft">Создание видео-роликов и проведение съемки </h2>
-           <p class="wow bounceInRight">для решения маркетинговых, имиджевых <br> и презентационных задач</p>
-           <p class="small wow bounceInLeft">Посмотрите короткое видео о нашей команде</p>
-          
-           <a href="#" class="btn-blue wow rotateIn">смотреть видео</a>
-            <img src="img/arrow.png" class="arrow" alt="">
-           <p class="small">Листайте вниз, чтобы узнать больше</p>
-           <img class="mouse" src="img/mouse.svg" alt="">
-         </div>
-       </div>
-     </div>
-     <div class="plus-block">
-     <h3 class="wow flash">Немного о BeamLight</h3>
-       <div class="container">
-         <div class="row">
-           <div class="col-md-offset-1 col-md-4">
-           <div class="border">
-           <img class="wow fadeInLeft" src="img/about-our-company/about-us.svg" alt="">
-             <h4>Чем мы занимаемся</h4>
-            </div >
-              <p class="wow bounceInLeft">Сегодня видеоролик способен решать сотни различных задач! Мы создаем видеорекламу, которая продает лучше любого менеджера. Мы делаем презентационные ролики, которые способны рассказать и показать больше, чем любая многочасовая лайв-презентация. А наши корпоративные и имиджевые видео позволяют эффективно продемонстрировать лучшие стороны любого продукта, бизнеса или организации.</p>
-           </div>
-           <div class="col-md-offset-2 col-md-4">
-           <div class="border">
-           <img class="wow fadeInRight" src="img/about-our-company/our-team.svg" alt="">
-           <h4>Наша команда</h4>
-            </div>
-            <p class="wow bounceInRight">В нашей команде только творческие люди, у которых за плечами большой опыт в создании видеороликов, репортажной съёмки, составления сценариев и качественном видео-монтаже. В своей работе мы используем только современную и профессиональную технику
-Вместе мы - команда профессионалов своего дела.</p>
-         </div>
-       </div>
-     </div>
+   <a href="#modal" class="modal-link">Регистрация</a>
+
+   <a href="#close" class="popup-overlay"></a>
+   <div class="popup"> 
+   <form action="#" class="my-form">
+   <a href="#close" class="popup-close">&times;</a>
+  <h2>Регистрация</h2>
+
+     <input type="text" placeholder="Логин">
+     <input type="password" placeholder="Пароль">
+     <a class="reg" href="thanks.html">Зарегистрироваться</a>
+  
+     
+   </form>
    </div>
 
+
+   
+   <a href="#0" class="cd-btn" id="modal-trigger" data-type="cd-modal-trigger"><img class= "more" src="img/prohibited.png" alt=""></a>
+
+
+   
+  <div class="cd-modal" data-modal="modal-trigger">
+    <div class="cd-svg-bg" 
+    data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z" 
+    data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z" 
+    data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z" 
+    data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z" 
+    data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z" 
+    data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
+      <svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
+        <title>SVG Modal background</title>
+        <path id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
+        <path id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
+        <path id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
+      </svg>
+    </div>
+
+    <div class="cd-modal-content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+      </p>
+    </div> <!-- cd-modal-content -->
+
+    <a href="#0" class="modal-close">Close</a>
+  </div> <!-- cd-modal -->
+
+  <div class="cd-cover-layer"></div> <!-- .cd-cover-layer -->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-   <script src="js/wow.min.js"></script>
-      <script>
-        new WOW().init();
-      </script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/snap.svg-min.js"></script>
+    <script src="js/main.js"></script>
+   
+ <script>
+   $(document).ready(function(){
+
+      var link = $('.modal-link');
+      var popup = $('.popup');
+      var close = $('.popup-close');
+      var overlay = $('.popup-overlay');
+      
+      link.click(function(){
+          link.fadeOut();
+          popup.fadeIn();
+          overlay.fadeIn();
+      });
+      close.click(function(){
+          popup.fadeOut();
+           link.fadeIn();
+           overlay.fadeOut();
+      });
+      overlay.click(function(){
+          popup.fadeOut();
+           link.fadeIn();
+           overlay.fadeOut();
+      });
+     
+   });
+ </script>
+
   </body>
 </html>
